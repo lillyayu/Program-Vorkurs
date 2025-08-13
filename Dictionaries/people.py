@@ -1,9 +1,11 @@
 """
 Eddy möchte ein Tool erstellen, welches es den Benutzern ermöglicht, die
 Daten aus einer Datenbank, welche dort in Form von dictionaries gespeichert
-sind, in einem kompakten Satz zusammenzufassen. Außerdem hat sein Kollege
-neue Daten hinzugefügt, diese aber leider nicht in Form von dicionaries,
-sondern in Form von Listen abgespeichert. D
+sind, in einem kompakten und für den Nutzer gut verständlichen Satz
+zusammenzufassen. Außerdem hat sein Kollege neue Daten hinzugefügt, diese aber
+leider nicht in Form von dicionaries, sondern in Form von Listen abgespeichert.
+Um diese Inkonsistenz zu korrigieren, mussen die Listen in dictionaries
+umformatiert werden.
 
 a) Schreibe eine Funktion, welche aus einem dictionary der Person ihr
     Geburstdatum, Alter, Lieblingstier und Größe extrahiert, und einen Satz
@@ -40,12 +42,33 @@ def b(person: list[str]) -> dict[str, str]:
 if __name__ == "__main__":
     person = {"name": "Julia", "birthdate": "11.06.2004", "animal": "Hund",
               "height": "1,62"}
-    assert a(person) == "Julia hat am 11.06.2004 Geburstag, ist 1,62m groß und hat das Lieblingstier Hund."
+    assert a(person) == (
+        "Julia hat am 11.06.2004 Geburstag, ist 1,62m groß"
+        " und hat das Lieblingstier Hund.")
+    assert b(["Julia", "11.06.2004", "Hund", "1,62"]) == (
+        {"name": "Julia", "birthdate": "11.06.2004", "animal": "Hund",
+         "height": "1,62"}
+    )
 
 
 """ Lösungen:
-a) return person["name"] + " hat am " + person["birthdate"] + " Geburstag, ist " + str(person["height"]) + "m groß und hat das Lieblingstier " + person["animal"] + "."
+a) return (
+        person["name"] + " hat am " + person["birthdate"] + " Geburstag, "
+        "ist " + str(person["height"]) + "m groß und hat das Lieblingstier "
+        + person["animal"] + "."
+        )
 
 b)  dic = dict()
-    dic["name"], dic["birthdate"],dic["animal"], dic["height"] = person[0], person[1], person[2], person[3] 
-    return dic"""
+    (
+    dic["name"],
+    dic["birthdate"],
+    dic["animal"],
+    dic["height"]
+    ) = (
+    person[0],
+    person[1],
+    person[2],
+    person[3]
+    )
+    return dic
+"""
