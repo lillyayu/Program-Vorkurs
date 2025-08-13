@@ -3,7 +3,7 @@ Im Freiburger Club "Elpi" soll an der Tür entschieden werden, ob eine Person
 in den Club kommt. Um in den Club zu kommen, muss man volljährig sein.
 
 a) Schreibe die Funktion "check_age", die das Alter übergeben bekommt und einen
-Wahrheitswert zurückgibt, der aussagt ob diese Person ins Elpi kommt oder nicht.
+Wahrheitswert zurückgibt, der aussagt ob diese Person ins Elpi kommt oder nicht
 
 b) Schreibe außerdem die Funktion "print_message" die einen Wahrheitswert über-
 geben bekommt und der Person sagt, ob sie in den Club kommt.
@@ -11,7 +11,10 @@ geben bekommt und der Person sagt, ob sie in den Club kommt.
 c) Nun kombiniere die beiden Ersten Funktionen in der Funktion "türsteher", die
 die BenutzerIn nach dem Alter fragt und eine Nachricht zurückgibt.
 
-Schwierigkeit 4/5.
+Schwierigkeit:
+a) 1/5
+b) 1/5
+c) 2/5
 """
 
 
@@ -47,6 +50,12 @@ def türsteher() -> None:
     """
     Bekommt von der BenuterIn das Alter und gibt je nach Alter durch die beiden
     anderen Funktionen zurück, ob die Benutzerin in den Club kommt.
+
+    Ausgabe (mit Beispiel input 19):
+    -----
+    Wie alt bist du? 19
+    Herzlich Willkommen!
+    -----
     """
     pass
 
