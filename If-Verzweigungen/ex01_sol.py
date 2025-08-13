@@ -29,7 +29,10 @@ def check_age(alter: int) -> bool:
     >>> check_age(17)
     False
     """
-    pass
+    if alter >= 18:
+        return True
+    else:
+        return False
 
 
 def print_message(alt_genug: bool) -> None:
@@ -39,11 +42,14 @@ def print_message(alt_genug: bool) -> None:
     "Du bist zu jung!" oder "Herzlich Willkommen!" aus.
 
     >>> print_message(False)
-    "Du bist zu jung!"
+    Du bist zu jung!
     >>> print_message(True)
-    "Herzlich Willkommen!"
+    Herzlich Willkommen!
     """
-    pass
+    if alt_genug:
+        print("Herzlich Willkommen!")
+    else:
+        print("Du bist zu jung!")
 
 
 def türsteher() -> None:
@@ -57,8 +63,10 @@ def türsteher() -> None:
     Herzlich Willkommen!
     -----
     """
-    pass
+    alter: int = int(input("Wie alt bist du? "))
+    alt_genug: bool = check_age(alter)
+    print_message(alt_genug)
 
 
 if __name__ == "__main__":
-    pass
+    türsteher()
