@@ -8,7 +8,8 @@ und einen Wahrheitswert zurückgibt, der aussagt ob diese Person ins Elpi kommt.
 b) Schreibe außerdem die Funktion "print_message" die einen Wahrheitswert über-
 geben bekommt und der Person sagt, ob sie in den Club kommt.
 
-c) Nun kombiniere die beiden Ersten Funktionen
+c) Nun kombiniere die beiden Ersten Funktionen in der Funktion "türsteher", die
+die BenutzerIn nach dem Alter fragt und eine Nachricht zurückgibt.
 
 Schwierigkeit 4/5.
 """
