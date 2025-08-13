@@ -2,8 +2,8 @@
 Im Freiburger Club "Elpi" soll an der Tür entschieden werden, ob eine Person
 in den Club kommt. Um in den Club zu kommen, muss man volljährig sein.
 
-a) Schreibe die Funktion "check_age" zuende, die das Alter übergeben bekommt
-und einen Wahrheitswert zurückgibt, der aussagt ob diese Person ins Elpi kommt.
+a) Schreibe die Funktion "check_age", die das Alter übergeben bekommt und einen
+Wahrheitswert zurückgibt, der aussagt ob diese Person ins Elpi kommt oder nicht.
 
 b) Schreibe außerdem die Funktion "print_message" die einen Wahrheitswert über-
 geben bekommt und der Person sagt, ob sie in den Club kommt.
