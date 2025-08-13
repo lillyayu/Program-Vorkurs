@@ -10,7 +10,8 @@ a) Schreibe eine Funktion, welche aus einem dictionary der Person ihr
     zurückgibt, welcher diese zusammenfasst.
 b) Schreibe eine Funktion, welche aus einer Liste mit den Informationen der
     Person ein dictionary erstellt, in dem die Informationen einer
-    Informationsklasse zugeordnet sind.  """
+    Informationsklasse zugeordnet sind.
+"""
 
 
 def a(person: dict[str, str]) -> str:
@@ -25,14 +26,15 @@ Lieblingstier Hund.'
     pass
 
 
-# def b(person: list[str]) -> dict[str, str]:
-#    """
-#    Aus der Liste "person" sollen die Informationen in ein dictionary
-#    umgeformt werden, welches am Ende zurückgegeben wird.
-#    >>> b(["Julia", "11.06.2004", "Hund", "1,62"])
-#    {'name': 'Julia', 'birthdate': '11.06.2004',
-#    ... 'animal': 'Hund', 'height': '1,62'}"""
-#    pass
+def b(person: list[str]) -> dict[str, str]:
+    """
+    Aus der Liste "person" sollen die Informationen in ein dictionary
+    umgeformt werden, welches am Ende zurückgegeben wird.
+    >>> b(["Julia", "11.06.2004", "Hund", "1,62"])
+    {'name': 'Julia', 'birthdate': '11.06.2004',
+    ... 'animal': 'Hund', 'height': '1,62'}
+    """
+    pass
 
 
 if __name__ == "__main__":
