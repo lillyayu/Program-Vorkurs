@@ -2,8 +2,15 @@
 Im Freiburger Club "Elpi" soll an der Tür entschieden werden, ob eine Person
 in den Club kommt. Um in den Club zu kommen, muss man volljährig sein.
 
-Schreibe die Funktion "check_age" zuende, die das Alter übergeben bekommt und
- einen Wahrheitswert zurückgibt, der aussagt ob diese Person ins Elpi kommt.
+a) Schreibe die Funktion "check_age" zuende, die das Alter übergeben bekommt
+und einen Wahrheitswert zurückgibt, der aussagt ob diese Person ins Elpi kommt.
+
+b) Schreibe außerdem die Funktion "print_message" die einen Wahrheitswert über-
+geben bekommt und der Person sagt, ob sie in den Club kommt.
+
+c) Nun kombiniere die beiden Ersten Funktionen
+
+Schwierigkeit 4/5.
 """
 
 
@@ -21,5 +28,27 @@ def check_age(alter: int) -> bool:
     pass
 
 
+def print_message(alt_genug: bool) -> None:
+    """
+    Außerdem will der Türsteher nicht die ganze Zeit das gleiche sagen müssen.
+    Um ihm die Arbeit zu erleichtern. Gib je nach Fall entweder:
+    "Du bist zu jung!" oder "Herzlich Willkommen!" aus.
+
+    >>> print_message(False)
+    "Du bist zu jung!"
+    >>> print_message(True)
+    "Herzlich Willkommen!"
+    """
+    pass
+
+
+def türsteher() -> None:
+    """
+    Bekommt von der BenuterIn das Alter und gibt je nach Alter durch die beiden
+    anderen Funktionen zurück, ob die Benutzerin in den Club kommt.
+    """
+    pass
+
+
 if __name__ == "__main__":
-    check_age(5)
+    pass
