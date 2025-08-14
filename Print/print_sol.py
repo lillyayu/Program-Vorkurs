@@ -27,7 +27,7 @@ def eins_bis_neun():
     >>> eins_bis_neun()
     1 2 3 4 5 6 7 8 9
     """
-    pass
+    print(1, 2, 3, 4, 5, 6, 7, 8, 9)
 
 
 def eins_bis_neun_at():
@@ -37,7 +37,7 @@ def eins_bis_neun_at():
     <BLANKLINE>
     <BLANKLINE>
     """
-    pass
+    print(1, 2, 3, 4, 5, 6, 7, 8, 9, sep="@@@@", end="\n\n\n")
 
 
 def eins_bis_fünf_stern():
@@ -53,7 +53,7 @@ def eins_bis_fünf_stern():
      **********
      5
     """
-    pass
+    print(1, 2, 3, 4, 5, sep="\n" + 10*"*" + "\n")
 
 
 def print_x():
@@ -64,7 +64,7 @@ def print_x():
     XXXX
     <BLANKLINE>
     """
-    pass
+    print(3 * (4 * "X" + "\n"))
 
 
 if __name__ == "__main__":

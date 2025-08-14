@@ -14,6 +14,7 @@ zufällige Zahl von 1 bis n erraten muss und zähle die Versuche, die sie brauch
 Schwierigkeit
 a) 3/5
 b) 4/5
+
 """
 
 
