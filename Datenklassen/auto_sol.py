@@ -53,7 +53,30 @@ class FahrerIn:
         >>> lisa.grüßt()
         Hallo! Ich bin Lisa!!
         """
-        pass
+        print("Hallo! Ich bin " + self.vorname + "!!")
+
+
+@dataclass
+class Auto:
+    marke: str
+    modell: str
+    baujahr: int
+    fahrerin: FahrerIn
+
+    def fahrerin_grüßt(self):
+        """
+        Die Fahrerin stellt sich und ihr Auto vor.
+
+        >>> a = Auto("Open", "Astra", 2007, FahrerIn("Lisa", "Krause", 27,\
+            "Frau", 177, True))
+        >>> a.fahrerin_grüßt()
+        Hallo! Ich bin Lisa!!
+        Das hier ist mein Open Astra von 2007
+        """
+
+        self.fahrerin.grüßt()
+        print("Das hier ist mein", self.marke,
+              self.modell, "von", self.baujahr)
 
 
 if __name__ == "__main__":

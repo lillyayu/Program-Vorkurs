@@ -1,3 +1,75 @@
+from dataclasses import dataclass
 """
-Dunder-Methods. __eq__, __lt__ etc..
+In der letzten Aufgabe habt ihr hoffentlich schon das Prinzip
+von Datenklassen verstanden. Wir kommen mit Datenklassen recht
+häufig in die Situation, dass wir Datenklassen miteinander
+vergleichen oder interagieren lassen wollen.
+
+Dazu dienen uns sogenannte "Dunder"-Methoden. Bei Zahlen haben
+wir schon vergleichsoperationen wie ==, <, etc.. kennengelernt.
+
+Eine Bank will die Wichtigkeit ihrer Konten nach Kontostand einordnen.
+Dazu muss die Bank schnell in der Lage sein, zwei Konten miteinander zu
+vergleichen.
+
+Die Bank hat schon eine Möglichkeit implementiert, um zu schauen, ob
+zwei Konten die selbe Kontonr haben. Dazu wurde die __eq__ Dunder-Methode
+verwendet. Durch diese können wir nun den Operator "==" verwenden, um
+die Gleichheit zweier Konten zu vergleichen, selbst wenn sich die
+InhaberIn und der Kontostand ändern.
+
+a) Implementiere die Funktionen __lt__ (lower than / kleiner als) und
+__le__ (lower equal / kleiner gleich), welche Überprüfen, ob der Kontostand
+kleiner als / kleiner gleich einem anderen Konto ist.
+
+b) ???
+
+Schwierigkeit:
+a) 2/5
+
 """
+
+
+@dataclass
+class Konto:
+    besitzerin: str
+    kontronr: int
+    kontostand: float
+
+    def __eq__(self, other: "Konto"):
+        """
+        Gibt an, ob die Kontonummern gleich sind.
+
+        >>> k1 = Konto("Max Mustermann", 1234, -12.02)
+        >>> k2 = Konto("Alex Staub", 1234, 5954.02)
+        >>> k1==k2
+        True
+
+        """
+        return self.kontronr == other.kontronr
+
+    def __lt__(self, other: "Konto"):
+        """
+        >>> k1 = Konto("Max Mustermann", 1234, -12.02)
+        >>> k2 = Konto("Alex Staub", 1234, 5954.02)
+        >>> k1<k2
+        True
+        >>> k1>k2
+        False
+        """
+        return self.kontostand < other.kontostand
+
+    def __le__(self, other: "Konto"):
+        """
+        >>> k1 = Konto("Max Mustermann", 1234, 5954.02)
+        >>> k2 = Konto("Alex Staub", 1234, 5954.02)
+        >>> k1<=k2
+        True
+        """
+        return self.kontostand <= other.kontostand
+
+
+if __name__ == "__main__":
+    k1 = Konto("Max Mustermann", 1234, 5954.02)
+    k2 = Konto("Alex Staub", 1234, 5954.02)
+    print(k1 <= k2)

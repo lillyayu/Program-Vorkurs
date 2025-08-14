@@ -2,7 +2,8 @@
 Eddy möchte ein Tool erstellen, welches es den Benutzern ermöglicht, die
 Daten aus einer Datenbank, welche dort in Form von dictionaries gespeichert
 sind, in einem kompakten und für den Nutzer gut verständlichen Satz
-zusammenzufassen. Außerdem hat sein Kollege neue Daten hinzugefügt, diese aber
+zusammenzufassen.
+Außerdem hat sein Kollege neue Daten hinzugefügt, diese aber
 leider nicht in Form von dicionaries, sondern in Form von Listen abgespeichert.
 Um diese Inkonsistenz zu korrigieren, mussen die Listen in dictionaries
 umformatiert werden.
@@ -10,6 +11,7 @@ umformatiert werden.
 a) Schreibe eine Funktion, welche aus einem dictionary der Person ihr
     Geburstdatum, Alter, Lieblingstier und Größe extrahiert, und einen Satz
     zurückgibt, welcher diese zusammenfasst.
+
 b) Schreibe eine Funktion, welche aus einer Liste mit den Informationen der
     Person ein dictionary erstellt, in dem die Informationen einer
     Informationsklasse zugeordnet sind.
@@ -17,6 +19,7 @@ b) Schreibe eine Funktion, welche aus einer Liste mit den Informationen der
 Schwierigkeit:
 a) 2/5
 b)
+
 """
 
 
