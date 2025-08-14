@@ -52,7 +52,10 @@ def alle_wahr(liste: list[bool]) -> bool:
     >>> alle_wahr([True, True, False, True])
     False
     """
-    pass
+    for value in liste:
+        if not value:
+            return False
+    return True
 
 
 def bestnote(noten: list[float]) -> float | None:
@@ -65,7 +68,13 @@ def bestnote(noten: list[float]) -> float | None:
     5.0
     >>> bestnote([])
     """
-    pass
+    if len(noten) == 0:
+        return None
+    kleinste_note: float = noten[0]
+    for note in noten:
+        if note < kleinste_note:
+            kleinste_note = note
+    return kleinste_note
 
 
 def längstes_wort(wörter: list[str]) -> str:
@@ -78,7 +87,11 @@ def längstes_wort(wörter: list[str]) -> str:
     >>> längstes_wort(["die", "tasse", "kaffee", "tassen"])
     'kaffee'
     """
-    pass
+    längstes: str = ""
+    for wort in wörter:
+        if len(wort) > len(längstes):
+            längstes = wort
+    return längstes
 
 
 def überprüfe_gäste(gästeliste: list[tuple[str, int]]) -> list[str]:
@@ -94,4 +107,8 @@ def überprüfe_gäste(gästeliste: list[tuple[str, int]]) -> list[str]:
     >>> überprüfe_gäste([("Jakob", 12),("Sophia", 17), ("Anna", 17)])
     ['Jakob', 'Sophia', 'Anna']
     """
-    pass
+    returnlist: list[str] = []
+    for name, alter in gästeliste:
+        if alter < 18:
+            returnlist.append(name)
+    return returnlist
