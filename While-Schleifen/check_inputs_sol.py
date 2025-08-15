@@ -30,7 +30,10 @@ def require_password(password: str) -> None:
     Zugriff erlaubt!
     -----------
     """
-    pass
+    password_input: str = input("Passwort? ")
+    while not password_input == password:
+        password_input = input("Falsch. Passwort? ")
+    print("Zugriff erlaubt!")
 
 
 def guess_number(n: int) -> None:
@@ -49,7 +52,14 @@ def guess_number(n: int) -> None:
     Richtig! Die Zahl war: 1. Du hast 3 Versuche gebraucht!
     ----
     """
-    pass
+    random_number: int = randint(1, n)
+    number_guesses: int = 0
+    guess: int = int(input("Errate die Zahl: "))
+    while not guess == random_number:
+        number_guesses += 1
+        guess = int(input("Nicht ganz. Errate die Zahl: "))
+    print("Richtig! Die Zahl war: " + str(random_number) + ". Du hast " +
+          str(number_guesses) + " Versuche gebraucht!")
 
 
 if __name__ == "__main__":
