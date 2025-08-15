@@ -52,7 +52,7 @@ def alle_wahr(liste: list[bool]) -> bool:
     >>> alle_wahr([True, True, False, True])
     False
     """
-    pass
+    ...
 
 
 def bestnote(noten: list[float]) -> float | None:
@@ -65,7 +65,7 @@ def bestnote(noten: list[float]) -> float | None:
     5.0
     >>> bestnote([])
     """
-    pass
+    ...
 
 
 def längstes_wort(wörter: list[str]) -> str:
@@ -78,7 +78,7 @@ def längstes_wort(wörter: list[str]) -> str:
     >>> längstes_wort(["die", "tasse", "kaffee", "tassen"])
     'kaffee'
     """
-    pass
+    ...
 
 
 def überprüfe_gäste(gästeliste: list[tuple[str, int]]) -> list[str]:
@@ -94,4 +94,4 @@ def überprüfe_gäste(gästeliste: list[tuple[str, int]]) -> list[str]:
     >>> überprüfe_gäste([("Jakob", 12),("Sophia", 17), ("Anna", 17)])
     ['Jakob', 'Sophia', 'Anna']
     """
-    pass
+    ...

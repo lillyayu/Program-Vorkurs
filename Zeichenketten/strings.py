@@ -7,7 +7,8 @@ Anfangsbuchstaben wie der Name hat. Da es aber ganz schön viele Erstis an der
 Uni Freiburg gibt, brauchen wir eine Funktion, die für uns überprüft, ob ein
 Name und ein Tier den gleichen Anfangsbuchstaben haben.
 
-Schreibe die Funktion "check_first_letter", die genau dies tut.
+Schreibe die Funktion "check_first_letter", die den ersten Buchstaben vom
+Namen und den ersten Buchstaben des Tiers vegleicht.
 Hinweis: Groß- und Kleinschreibung beachten (teil der nächsten aufgabe)
 
 b) Die Funktion aus a) funktioniert zwar schon, "Lenia" und "löwe" haben laut
@@ -51,4 +52,4 @@ def check_first_letter_ignore_case(name: str, tier: str):
 
 
 if __name__ == "__main__":
-    pass
+    ...

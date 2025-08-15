@@ -30,7 +30,7 @@ def require_password(password: str) -> None:
     Zugriff erlaubt!
     -----------
     """
-    pass
+    ...
 
 
 def guess_number(n: int) -> None:
@@ -49,7 +49,7 @@ def guess_number(n: int) -> None:
     Richtig! Die Zahl war: 1. Du hast 3 Versuche gebraucht!
     ----
     """
-    pass
+    ...
 
 
 if __name__ == "__main__":

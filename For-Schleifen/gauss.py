@@ -30,12 +30,12 @@ def gauss_formel(n: int) -> int:
 
     >>> gauss_formel(100)
     5050
-    >>> gauss_formel(100)
+    >>> gauss_formel(1000)
     500500
     >>> gauss_formel(456)
     104196
     """
-    pass
+    ...
 
 
 def add_n_numbers(n: int) -> int:
@@ -49,7 +49,7 @@ def add_n_numbers(n: int) -> int:
     >>> add_n_numbers(456)
     104196
     """
-    pass
+    ...
 
 
 def gauss_list(liste: list[int]) -> int:
@@ -59,7 +59,7 @@ def gauss_list(liste: list[int]) -> int:
     >>> gauss_list([100, 1000])
     505550
     """
-    pass
+    ...
 
 
 if __name__ == "__main__":

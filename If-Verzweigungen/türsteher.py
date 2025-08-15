@@ -30,7 +30,7 @@ def check_age(alter: int) -> bool:
     >>> check_age(17)
     False
     """
-    pass
+    ...
 
 
 def print_message(alt_genug: bool) -> None:
@@ -44,7 +44,7 @@ def print_message(alt_genug: bool) -> None:
     >>> print_message(True)
     "Herzlich Willkommen!"
     """
-    pass
+    ...
 
 
 def türsteher() -> None:
@@ -58,8 +58,8 @@ def türsteher() -> None:
     Herzlich Willkommen!
     -----
     """
-    pass
+    ...
 
 
 if __name__ == "__main__":
-    pass
+    ...

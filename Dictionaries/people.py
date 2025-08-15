@@ -17,8 +17,8 @@ b) Schreibe eine Funktion, welche aus einer Liste mit den Informationen der
     Informationsklasse zugeordnet sind.
 
 Schwierigkeit:
-a) 2/5
-b)
+a) 3/5
+b) 4/5
 
 """
 
@@ -33,7 +33,7 @@ def a(person: dict[str, str]) -> str:
     'Julia hat am 11.06.2004 Geburstag, ist 1.62m groß und hat das \
 Lieblingstier Hund.'
     """
-    pass
+    ...
 
 
 def b(person: list[str]) -> dict[str, str]:
@@ -45,7 +45,7 @@ def b(person: list[str]) -> dict[str, str]:
     {'name': 'Julia', 'birthdate': '11.06.2004',
     ... 'animal': 'Hund', 'height': '1,62'}
     """
-    pass
+    ...
 
 
 if __name__ == "__main__":
