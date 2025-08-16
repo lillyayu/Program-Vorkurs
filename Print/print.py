@@ -22,7 +22,7 @@ d) 3/5
 """
 
 
-def eins_bis_neun():
+def eins_bis_neun() -> None:
     """
     >>> eins_bis_neun()
     1 2 3 4 5 6 7 8 9
@@ -30,7 +30,7 @@ def eins_bis_neun():
     ...
 
 
-def eins_bis_neun_at():
+def eins_bis_neun_at() -> None:
     """
     >>> eins_bis_neun_at()
     1@@@@2@@@@3@@@@4@@@@5@@@@6@@@@7@@@@8@@@@9
@@ -40,7 +40,7 @@ def eins_bis_neun_at():
     ...
 
 
-def eins_bis_fünf_stern():
+def eins_bis_fünf_stern() -> None:
     """
      >>> eins_bis_fünf_stern()
      1
@@ -56,7 +56,7 @@ def eins_bis_fünf_stern():
     ...
 
 
-def print_x():
+def print_x() -> None:
     """
     >>> print_x()
     XXXX

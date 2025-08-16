@@ -20,7 +20,7 @@ Liste zurückgibt (Beispiel: [1, 3, 4] = 1 + 6 + 10 = 17)
 Schwierigkeit:
 a) 1/5
 b) 2/5
-c) 4/5
+c) 4/5 🌶️
 """
 
 

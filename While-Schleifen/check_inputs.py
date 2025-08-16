@@ -54,4 +54,4 @@ def guess_number(n: int) -> None:
 
 if __name__ == "__main__":
     require_password("DiesesPasswortIstSicher123")
-    guess_number(10)
+    print("Zufall:", randint(24, 2048))

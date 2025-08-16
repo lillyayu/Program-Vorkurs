@@ -18,13 +18,20 @@ das selbe.
 Schreibe also eine ähnliche Funktion "check_first_letter_ignore_case" welche
 die Groß und Kleinschreibung ignoriert.
 
+c) manchmal will man einfach nur schreien. Schreibe die Funktion "scream",
+welche einen Text nimmt und ihn in GROSSBUCHSTABEN! umwandelt, sofern ein
+Ausrufezeichen darin vorkommt. Sonst soll "scream" den Text so wie er ist
+zurückgeben.
+
 Schwierigkeit:
 a) 1/5
 b) 2/5
+c) 2/5
+
 """
 
 
-def check_first_letter(name: str, tier: str):
+def check_first_letter(name: str, tier: str) -> bool:
     """
     Überprüft, ob der Anfangsbuchstabe von "name" und "tier" der selbe ist.
 
@@ -35,9 +42,10 @@ def check_first_letter(name: str, tier: str):
     >>> check_first_letter("jakob", "löwe")
     False
     """
+    ...
 
 
-def check_first_letter_ignore_case(name: str, tier: str):
+def check_first_letter_ignore_case(name: str, tier: str) -> bool:
     """
     Überprüft, ob der Anfangsbuchstabe von "name" und "tier" übereinstimmen.
     Ignoriert Groß und Kleinschreibung
@@ -49,6 +57,26 @@ def check_first_letter_ignore_case(name: str, tier: str):
     >>> check_first_letter("jakob", "löwe")
     False
     """
+    ...
+
+
+def scream(text: str) -> str:
+    """
+    Wandelt "text" in einen GESCHRIENEN Text um, wenn keine Zahlen darin sind.
+
+    >>> scream("Hallo dahinten!!!")
+    'HALLO DAHINTEN!!!'
+    >>> scream("Hallo dahinten.")
+    'Hallo dahinten.'
+    """
+    ...
+
+
+def snake_case(Namen: list[str]) -> str:
+    """
+    Verwandelt eine Liste von Namen in einen langen snake_case namen.
+    """
+    ...
 
 
 if __name__ == "__main__":

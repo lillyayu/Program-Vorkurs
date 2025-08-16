@@ -48,7 +48,7 @@ class Konto:
         """
         return self.kontronr == other.kontronr
 
-    def __lt__(self, other: "Konto"):
+    def __lt__(self, other: "Konto") -> bool:
         """
         >>> k1 = Konto("Max Mustermann", 1234, -12.02)
         >>> k2 = Konto("Alex Staub", 1234, 5954.02)
@@ -59,7 +59,7 @@ class Konto:
         """
         return self.kontostand < other.kontostand
 
-    def __le__(self, other: "Konto"):
+    def __le__(self, other: "Konto") -> bool:
         """
         >>> k1 = Konto("Max Mustermann", 1234, 5954.02)
         >>> k2 = Konto("Alex Staub", 1234, 5954.02)
