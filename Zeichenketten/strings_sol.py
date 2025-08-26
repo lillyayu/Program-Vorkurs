@@ -43,7 +43,7 @@ def check_first_letter(name: str, tier: str) -> bool:
     >>> check_first_letter("jakob", "löwe")
     False
     """
-    ...
+    return name[0] == tier[0]
 
 
 def check_first_letter_ignore_case(name: str, tier: str) -> bool:
@@ -58,7 +58,7 @@ def check_first_letter_ignore_case(name: str, tier: str) -> bool:
     >>> check_first_letter_ignore_case("jakob", "löwe")
     False
     """
-    ...
+    return name.lower()[0] == tier.lower()[0]
 
 
 def scream(text: str) -> str:
@@ -70,7 +70,9 @@ def scream(text: str) -> str:
     >>> scream("Hallo dahinten.")
     'Hallo dahinten.'
     """
-    ...
+    if text.__contains__("!"):
+        return text.upper()
+    return text
 
 
 def snake_case(namen: list[str]) -> str:
@@ -80,7 +82,7 @@ def snake_case(namen: list[str]) -> str:
     >>> snake_case(["das", "ist", "eine", "FUNKTION"])
     'das_ist_eine_funktion'
     """
-    ...
+    return "_".join(namen).lower()
 
 
 if __name__ == "__main__":

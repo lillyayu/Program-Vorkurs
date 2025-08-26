@@ -17,7 +17,7 @@ b) Schreibe eine Funktion, welche aus einer Liste mit den Informationen der
     Informationsklasse zugeordnet sind.
 
 Schwierigkeit:
-a) 2/5
+a) 3/5
 b)
 
 """
