@@ -1,6 +1,3 @@
-from unittest.mock import patch
-
-
 """
 a) Schreibe ein Programm, welches den Nutzer auffordert, eine Zahl einzugeben.
 Verwende danach die Funktion "print()", um einen Antwortsatz auszugeben,

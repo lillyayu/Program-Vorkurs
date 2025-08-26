@@ -41,7 +41,6 @@ class FahrerIn:
     vorname: str
     nachname: str
     alter: int
-    gender: str
     größe: int
     gültiger_führerschein: bool
 
@@ -49,7 +48,7 @@ class FahrerIn:
         """
         Die FahrerIn stellt sich vor.
 
-        >>> lisa = FahrerIn("Lisa", "Krause", 27, "Frau", 177, True)
+        >>> lisa = FahrerIn("Lisa", "Krause", 27, 177, True)
         >>> lisa.grüßt()
         Hallo! Ich bin Lisa!!
         """
@@ -80,7 +79,7 @@ class Auto:
 
 
 if __name__ == "__main__":
-    lisa: FahrerIn = FahrerIn("Lisa", "Krause", 27, "Frau", 177, True)
+    lisa: FahrerIn = FahrerIn("Lisa", "Krause", 27, 177, True)
     lisa.grüßt()
 
     opel_astra: Auto = Auto("Open", "Astra", 2007, lisa)
