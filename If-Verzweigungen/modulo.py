@@ -1,3 +1,4 @@
+import doctest
 """
 Das 3x+1 Problem ist ein Problem in der Mathematik, bei dem man von einer
 beliebigen Zahl ausgeht. Wenn diese ungrade ist, ist die neue Zahl x = 3*x+1,
@@ -74,4 +75,5 @@ def three_x_plus_one(n: int):
 
 
 if __name__ == "__main__":
+    doctest.testmod()
     ...

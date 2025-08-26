@@ -1,3 +1,4 @@
+import doctest
 """
 Eine der häufigsten Anwendungen von For-Schleifen ist das durchlaufen von
 Listen, zum Beispiel zum sortieren, zum herausfinden der größten Zahl, zum
@@ -95,4 +96,9 @@ def überprüfe_gäste(gästeliste: list[tuple[str, int]]) -> list[str]:
     >>> überprüfe_gäste([("Jakob", 12),("Sophia", 17), ("Anna", 17)])
     ['Jakob', 'Sophia', 'Anna']
     """
+    ...
+
+
+if __name__ == "__main__":
+    doctest.testmod()
     ...

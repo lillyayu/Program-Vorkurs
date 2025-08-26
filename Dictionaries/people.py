@@ -1,3 +1,4 @@
+import doctest
 """
 Eddy möchte ein Tool erstellen, welches es den Benutzern ermöglicht, die
 Daten aus einer Datenbank, welche dort in Form von dictionaries gespeichert
@@ -49,6 +50,7 @@ def b(person: list[str]) -> dict[str, str]:
 
 
 if __name__ == "__main__":
+    doctest.testmod()
     person = {"name": "Julia", "birthdate": "11.06.2004", "animal": "Hund",
               "height": "1,62"}
     assert a(person) == (

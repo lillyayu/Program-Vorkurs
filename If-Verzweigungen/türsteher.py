@@ -1,3 +1,4 @@
+import doctest
 """
 Im Freiburger Club "Elpi" soll an der Tür entschieden werden, ob eine Person
 in den Club kommt. Um in den Club zu kommen, muss man volljährig sein.
@@ -62,4 +63,5 @@ def türsteher() -> None:
 
 
 if __name__ == "__main__":
+    doctest.testmod()
     ...

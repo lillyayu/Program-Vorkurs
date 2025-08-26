@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+import doctest
 """
 Datenklassen sind eine besondere Form der Klassen, die wir schon kennengelernt
 haben. Sie übernehmen viele Aufgaben von Klassen, welche man normalerweise
@@ -56,6 +57,7 @@ class FahrerIn:
 
 
 if __name__ == "__main__":
+    doctest.testmod()
     lisa: FahrerIn = FahrerIn("Lisa", "Krause", 27, 177, True)
     lisa.grüßt()
 

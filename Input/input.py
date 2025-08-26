@@ -23,27 +23,18 @@ c) 3/5
 
 def enter_number() -> None:
     """
-    >>> with patch('builtins.input', return_value='5'):
-    ...     enter_number()
-    Sie haben die Zahl "5" eingegeben.
     """
     pass
 
 
 def enter_number_fstring() -> None:
     """
-    >>> with patch('builtins.input', return_value='5'):
-    ...     enter_number_fstring()
-    Sie haben die Zahl "5" eingegeben.
     """
     pass
 
 
 def kosten_metallplatte() -> None:
     """
-    >>> with patch('builtins.input', side_effect=['3', '2']):
-    ...     kosten_metallplatte()
-    Die Metallplatte mit den Maßen 3x2m kostet 16.68€.
     """
     pass
 

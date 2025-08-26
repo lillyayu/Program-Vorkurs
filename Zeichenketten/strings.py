@@ -1,3 +1,4 @@
+import doctest
 """
 Zeichenketten sind in Python sehr wichtig. Es gibt einige Funktionen speziell
 für Zeichenketten. In dieser Aufgabe lernt ihr diese besser kennen.
@@ -84,4 +85,5 @@ def snake_case(namen: list[str]) -> str:
 
 
 if __name__ == "__main__":
+    doctest.testmod()
     check_first_letter_ignore_case("Lenia", "löwe")

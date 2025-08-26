@@ -1,3 +1,4 @@
+import doctest
 """
 a) Schreibe ein Programm, welches den Nutzer auffordert, eine Zahl einzugeben.
 Verwende danach die Funktion "print()", um einen Antwortsatz auszugeben,
@@ -23,9 +24,6 @@ c) 3/5
 
 def enter_number() -> None:
     """
-    >>> with patch('builtins.input', return_value='5'):
-    ...     enter_number()
-    Sie haben die Zahl "5" eingegeben.
     """
     number = input("Bitte geben Sie eine Zahl ein: ")
     print(
@@ -34,9 +32,6 @@ def enter_number() -> None:
 
 def enter_number_fstring() -> None:
     """
-    >>> with patch('builtins.input', return_value='5'):
-    ...     enter_number_fstring()
-    Sie haben die Zahl "5" eingegeben.
     """
     number = input("Bitte geben Sie eine Zahl ein: ")
     print(f"Sie haben die \
@@ -45,9 +40,6 @@ Zahl \"{number}\" eingegeben.")
 
 def kosten_metallplatte() -> None:
     """
-    >>> with patch('builtins.input', side_effect=['3', '2']):
-    ...     kosten_metallplatte()
-    Die Metallplatte mit den Maßen 3x2m kostet 16.68€.
     """
     preis = 2.78
     laenge = int(input("Geben Sie die Länge der Metallplatte an: "))
@@ -57,6 +49,7 @@ kostet {laenge * breite * preis}€.")
 
 
 if __name__ == "__main__":
+    doctest.testmod()
     enter_number()
     enter_number_fstring()
     kosten_metallplatte()

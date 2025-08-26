@@ -1,3 +1,4 @@
+import doctest
 """
 1784 wurde Carl Friedrich Gauß von seinem Lehrer gefragt, die ersten 100
 natürlichen Zahlen zu addieren. Gauß hat sich einen intelligenten Algorithmus
@@ -63,4 +64,5 @@ def gauss_list(liste: list[int]) -> int:
 
 
 if __name__ == "__main__":
+    doctest.testmod()
     print(gauss_formel(456))
