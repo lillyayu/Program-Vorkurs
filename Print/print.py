@@ -11,13 +11,17 @@ c) Gebe alle Ziffern von 1-5, jeweils durch eine Zeile mit
 10 mal "*" getrennt, aus. Verwende dafür nur eine Zeile.
 
 d) Schreibe ein Programm, welches die in der Funktion print_x gezeigte Ausgabe
-erzeugt, jedoch nureinmal den Buchstaben "X" verwendet.
+erzeugt, jedoch nur einmal den Buchstaben "X" verwendet.
+
+e) Schreibe ein Programm, welches den Text: "a", "b", "c" ausgibt. Verwende
+dafür nur das Anführungszeichen mit Doppelstrich.
 
 Schwierigkeit:
 a) 1/5
 b) 2/5
 c) 2/5
 d) 3/5
+e) 2/5
 
 """
 
@@ -67,8 +71,17 @@ def print_x() -> None:
     ...
 
 
+def anfuehrungszeichen() -> None:
+    """
+    >>> anfuehrungszeichen()
+    "a", "b", "c"
+    """
+    ...
+
+
 if __name__ == "__main__":
     eins_bis_neun()
     eins_bis_neun_at()
     eins_bis_fünf_stern()
     print_x()
+    anfuehrungszeichen()

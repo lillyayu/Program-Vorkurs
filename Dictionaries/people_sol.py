@@ -5,7 +5,7 @@ sind, in einem kompakten und für den Nutzer gut verständlichen Satz
 zusammenzufassen.
 Außerdem hat sein Kollege neue Daten hinzugefügt, diese aber
 leider nicht in Form von dicionaries, sondern in Form von Listen abgespeichert.
-Um diese Inkonsistenz zu korrigieren, mussen die Listen in dictionaries
+Um diese Inkonsistenz zu korrigieren, müssen die Listen in dictionaries
 umformatiert werden.
 
 a) Schreibe eine Funktion, welche aus einem dictionary der Person ihr
@@ -17,8 +17,13 @@ b) Schreibe eine Funktion, welche aus einer Liste mit den Informationen der
     Informationsklasse zugeordnet sind.
 
 Schwierigkeit:
+<<<<<<< HEAD
 a) 3/5
 b)
+=======
+a) 2/5
+b) 3/5
+>>>>>>> 5f678840e1a696364f3830dac26f10e956ab8966
 
 """
 
