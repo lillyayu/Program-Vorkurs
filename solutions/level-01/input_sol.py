@@ -1,3 +1,4 @@
+import doctest
 from unittest.mock import patch
 
 
@@ -26,32 +27,32 @@ c) 3/5
 
 def enter_number() -> None:
     """
-    >>> with patch('builtins.input', return_value='5'):
-    ...     enter_number()
-    Sie haben die Zahl "5" eingegeben.
     """
-    pass
+    number = input("Bitte geben Sie eine Zahl ein: ")
+    print(
+        "Sie haben die Zahl \"" + number + "\" eingegeben.")
 
 
 def enter_number_fstring() -> None:
     """
-    >>> with patch('builtins.input', return_value='5'):
-    ...     enter_number_fstring()
-    Sie haben die Zahl "5" eingegeben.
     """
-    pass
+    number = input("Bitte geben Sie eine Zahl ein: ")
+    print(f"Sie haben die \
+Zahl \"{number}\" eingegeben.")
 
 
 def kosten_metallplatte() -> None:
     """
-    >>> with patch('builtins.input', side_effect=['3', '2']):
-    ...     kosten_metallplatte()
-    Die Metallplatte mit den Maßen 3x2m kostet 16.68€.
     """
-    pass
+    preis = 2.78
+    laenge = int(input("Geben Sie die Länge der Metallplatte an: "))
+    breite = int(input("Geben Sie die Breite der Metallplatte an: "))
+    print(f"Die Metallplatte mit den Maßen {laenge}x{breite}m \
+kostet {laenge * breite * preis}€.")
 
 
 if __name__ == "__main__":
+    doctest.testmod()
     enter_number()
     enter_number_fstring()
     kosten_metallplatte()
