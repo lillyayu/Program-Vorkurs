@@ -43,7 +43,7 @@ def string_to_list():
     ...     string_to_list()
     ['a', '3', 'g', 'h', '?', '§', 'd', 's', '!', 'f', 's']
     """
-    pass
+    ...
 
 
 def int_to_list():
@@ -54,7 +54,7 @@ def int_to_list():
     ['3', '1', '4', '1', '5', '9', '2', '6', '5', '3', '5', '8', '9', '7', \
 '9', '3', '2', '3', '8', '4', '6']
     """
-    pass
+    ...
 
 
 def buchstabe_zur_zahl():
@@ -65,7 +65,7 @@ def buchstabe_zur_zahl():
     ...     buchstabe_zur_zahl()
     'e'
     """
-    pass
+    ...
 
 
 def liste_als_speicher():
@@ -76,7 +76,7 @@ def liste_als_speicher():
     ...     liste_als_speicher()
     ['c', 'b', 'm']
     """
-    pass
+    ...
 
 
 def alphabetabschnitt():
@@ -87,4 +87,4 @@ def alphabetabschnitt():
     ...     alphabetabschnitt()
     ['c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k']
     """
-    pass
+    ...
