@@ -1,5 +1,4 @@
 from random import randint
-import doctest
 """
 Eine While Schleife ist eine Schleife, die den Inhalt des eingerückten Blocks
 so lange ausführt, wie eine Bedinung erfüllt ist. "while True:" erzeugt
@@ -24,12 +23,10 @@ def require_password(password: str) -> None:
     """
     Fragt so lange mit input nach dem Passwort, bis die BenutzerIn es eingibt.
 
-    Die Ausgabe soll beispielsweise so aussehen: (ohne die ----)
-    ------------
+    >>> require_password("DiesesPasswortIstSicher123")
     Passwort? DiesesPasswort124
     Falsch. Passwort? DiesesPasswortIstSicher123
     Zugriff erlaubt!
-    -----------
     """
     ...
 
@@ -42,18 +39,15 @@ def guess_number(n: int) -> None:
     Hinweis:
     random = randint(1, n) generiert eine zufällige Zahl von 1 bis n
 
-    Die Augabe soll beispielsweise so aussehen: (ohne die ----)
-    ----
+    >>> guess_number(4)
     Errate die Zahl: 3
     Errate die Zahl: 4
     Errate die Zahl: 1
     Richtig! Die Zahl war: 1. Du hast 3 Versuche gebraucht!
-    ----
     """
     ...
 
 
 if __name__ == "__main__":
-    doctest.testmod()
     require_password("DiesesPasswortIstSicher123")
     print("Zufall:", randint(24, 2048))

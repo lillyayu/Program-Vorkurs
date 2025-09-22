@@ -1,4 +1,3 @@
-import doctest
 """
 Im Freiburger Club "Elpi" soll an der Tür entschieden werden, ob eine Person
 in den Club kommt. Um in den Club zu kommen, muss man volljährig sein.
@@ -50,18 +49,15 @@ def print_message(alt_genug: bool) -> None:
 
 def türsteher() -> None:
     """
-    Bekommt von der BenuterIn das Alter und gibt je nach Alter durch die beiden
+    Fragt die BenuterIn nach dem Alter und gibt je nach Alter durch die beiden
     anderen Funktionen zurück, ob die Benutzerin in den Club kommt.
 
-    Ausgabe (mit Beispiel input 19):
-    -----
+    >>> türsteher()
     Wie alt bist du? 19
     Herzlich Willkommen!
-    -----
     """
     ...
 
 
 if __name__ == "__main__":
-    doctest.testmod()
     ...

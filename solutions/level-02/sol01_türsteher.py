@@ -43,9 +43,9 @@ def print_message(alt_genug: bool) -> None:
     "Du bist zu jung!" oder "Herzlich Willkommen!" aus.
 
     >>> print_message(False)
-    Du bist zu jung!
+    "Du bist zu jung!"
     >>> print_message(True)
-    Herzlich Willkommen!
+    "Herzlich Willkommen!"
     """
     if alt_genug:
         print("Herzlich Willkommen!")
@@ -55,14 +55,12 @@ def print_message(alt_genug: bool) -> None:
 
 def türsteher() -> None:
     """
-    Bekommt von der BenuterIn das Alter und gibt je nach Alter durch die beiden
+    Fragt die BenuterIn nach dem Alter und gibt je nach Alter durch die beiden
     anderen Funktionen zurück, ob die Benutzerin in den Club kommt.
 
-    Ausgabe (mit Beispiel input 19):
-    -----
+    >>> türsteher()
     Wie alt bist du? 19
     Herzlich Willkommen!
-    -----
     """
     alter: int = int(input("Wie alt bist du? "))
     alt_genug: bool = check_age(alter)
