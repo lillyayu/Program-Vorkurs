@@ -54,7 +54,7 @@ def buchstabe_zur_zahl():
 
 def liste_als_speicher():
     """
-    Forde drei Zahlen vom Benutzer, speicher die entsprechenden Zahlen in
+    Forde drei Zahlen vom Benutzer, speicher die entsprechenden Buchstaben in
     einer Liste und gebe diese zurück.
     >>> liste_als_speicher()
     Gib drei Zahlen ein:
