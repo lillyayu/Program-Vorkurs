@@ -27,10 +27,17 @@ d) 2/5
 
 if __name__ == "__main__":
     # a)
-    print(1 < 3)
+    print(5 < 3 or 1 <= 1 and 8 >= 12 or 2 < 9)  # True
+    print(5 < 3 or 1 <= 1 and 8 >= 12 and 2 < 9)  # False
 
     # b)
+    print((10 > 7 and 4 < 2) or (3 == 3))  # True
+    print((10 > 7 and 4 < 2) and (3 == 3))  # False
 
     # c)
+    print(not (5 == 5 and 2 > 3) and (7 < 6))  # False
+    print(not (5 == 5 and 2 > 3) or (7 < 6))  # True
 
     # d)
+    print((8 < 10 or 2 > 5) and (3 == 3 and not 4 < 2))  # True
+    print((8 < 10 or 2 > 5) and (3 == 4 and not 4 < 2))  # False

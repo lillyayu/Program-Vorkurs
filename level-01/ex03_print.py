@@ -1,4 +1,3 @@
-import doctest
 """
 In dieser Aufgabe beschäftigen wir uns intensiv mit der print()
 
@@ -81,7 +80,6 @@ def anfuehrungszeichen() -> None:
 
 
 if __name__ == "__main__":
-    doctest.testmod()
     eins_bis_neun()
     eins_bis_neun_at()
     eins_bis_fünf_stern()

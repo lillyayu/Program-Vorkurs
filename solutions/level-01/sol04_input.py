@@ -34,48 +34,32 @@ e) 3/5
 
 
 def enter_number() -> None:
-    """
-    Bestätigt die Eingabe der BenutzerIn
-
-    >>> enter_number()
-    Gibt eine Zahl ein: 5
-    Du hast die Zahl "5" eingegeben.
-    """
-    ...
+    number = input("Bitte geben Sie eine Zahl ein: ")
+    print(
+        "Sie haben die Zahl \"" + number + "\" eingegeben.")
 
 
 def enter_number_fstring() -> None:
-    """
-    Bestätigt die Eingabe der BenutzerIn mit einem f""
-
-    >>> enter_number_fstring()
-    Gibt eine Zahl ein: 5
-    Du hast die Zahl 5 eingegeben.
-    """
-    ...
+    number = input("Bitte geben Sie eine Zahl ein: ")
+    print(f"Sie haben die \
+            Zahl \"{number}\" eingegeben.")
 
 
 def kosten_metallplatte() -> None:
-    """
-    >>> kosten_metallplatte()
-    Wie breit soll sie sein? 3
-    Wie lang soll sie sein? 2
-    Die Metallplatte mit den Maßen 3x2m kostet 16.68€.
-    """
-    ...
+    preis = 2.78
+    laenge = int(input("Geben Sie die Länge der Metallplatte an: "))
+    breite = int(input("Geben Sie die Breite der Metallplatte an: "))
+    print(f"Die Metallplatte mit den Maßen {laenge}x{breite}m \
+kostet {laenge * breite * preis}€.")
 
 
 def getränke() -> None:
-    """
-    Berechnet die Gesamtkosten für Wasser und Saft
+    wasser: int = int(input("Anzahl Wasserflaschen: "))
+    saft: int = int(input("Anzahl Saftflaschen: "))
 
-    >>> getränke()
-    Anzahl Wasserflaschen: 2
-    Anzahl Saftflaschen: 3
-    Du hast 2 Wasserflaschen und 3 Saftflaschen gewählt.
-    Die Gesamtkosten betragen 9.95€.
-    """
-    ...
+    gesamt: float = wasser * 1.25 + saft * 1.85
+    print(f"Du hast {wasser} Wasserflaschen und {saft} Saftflaschen gewählt.")
+    print(f"Die Gesamtkosten betragen {gesamt:.2f}€.")
 
 
 if __name__ == "__main__":

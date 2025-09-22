@@ -27,7 +27,7 @@ a) 1/5
 b) 1/5
 c) 1/5
 d) 2/5 💡
-e) 2/5
+d) 2/5
 
 """
 
@@ -39,7 +39,7 @@ def durchschnitt(a: int, b: int, c: int) -> float:
     >>> durchschnitt(3, 4, 5)
     4.0
     """
-    ...
+    return (a + b + c)/3
 
 
 def abgerundeter_durchschnitt(a: int, b: int, c: int) -> int:
@@ -49,7 +49,7 @@ def abgerundeter_durchschnitt(a: int, b: int, c: int) -> int:
     >>> abgerundeter_durchschnitt(3, 4, 5)
     4
     """
-    ...
+    return (a + b + c) // 3
 
 
 def pythagoras(a: int, b: int) -> float:
@@ -59,7 +59,7 @@ def pythagoras(a: int, b: int) -> float:
     >>> pythagoras(3, 4)
     5.0
     """
-    ...
+    return (a**2 + b**2)**0.5
 
 
 if __name__ == "__main__":
