@@ -113,5 +113,35 @@ def snake_case(namen: list[str]) -> str:
     return "_".join(namen_lower)
 
 
+def verschlüssele(text: str, key: int) -> str:
+    """
+    Verschiebt jeden Buchstaben des Textes um "key" im Alphabet.
+
+    >>> verschlüssele("abc", 3)
+    'def'
+    >>> verschlüssele("Hello There!", 7)
+    'Nkrru&Znkxk''
+    """
+    verschlüsselt: str = ""
+    for char in text:
+        verschlüsselt += chr(ord(char) + key)
+    return verschlüsselt
+
+
+def entschlüssele(text: str, key: int) -> str:
+    """
+    Verschiebt jeden Buchstaben des Textes um "key" im Alphabet.
+
+    >>> verschlüssele("def", 3)
+    'abc'
+    >>> entschlüssele("Nkrru&Znkxk'", 7)
+    'Hello There!'
+    """
+    entschlüsselt: str = ""
+    for char in text:
+        entschlüsselt += chr(ord(char) - key)
+    return entschlüsselt
+
+
 if __name__ == "__main__":
     check_first_letter_ignore_case("Lenia", "löwe")

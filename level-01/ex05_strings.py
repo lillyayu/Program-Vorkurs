@@ -36,6 +36,19 @@ welche eine Liste von Worten mit Unterstrichen verbindet.
 f) schreibe die Funktion snake_case, welche zusätzlich wie beim Snake-Case alle
 Worte in nur Kleinbuchstaben verwandelt. Spicy!
 
+g) Verschlüsselung: ord() verwandelt einen Buchstaben in die dazugehörige
+Ganzzahl des Ascii-Code. ord('a') = 97. chr() macht das Gegenteil und wandelt
+die Ganzzahl des Ascii-Codes in den dazugehörigen Buchstaben um. chr(97) = 'a'
+
+Bei der Cäsar-Verschlüsselung werden alle Buchstaben im Alphabet um eine
+bestimmte Zahl verschoben. Um zurück zu verschlüsseln muss einfach um die
+gleiche Zahl in die entgegengesetzte Richtung verschoben werden.
+
+Schreibe die Funktionen "verschlüssele" und "entschlüssele", die eine Zeichen-
+kette und eine Ganzzahl nehmen und den Text ver- oder entschlüsseln.
+
+Beurteile: Braucht es 2 Funktionen?
+
 Schwierigkeit:
 a) 1/5
 b) 1/5
@@ -43,6 +56,7 @@ c) 2/5
 d) 2/5
 e) 3/5
 f) 4/5 🌶️
+g) 4.5/5 🔥
 
 """
 
@@ -119,5 +133,30 @@ def snake_case(namen: list[str]) -> str:
     ...
 
 
+def verschlüssele(text: str, key: int) -> str:
+    """
+    Verschiebt jeden Buchstaben des Textes um "key" im Alphabet.
+
+    >>> verschlüssele("abc", 3)
+    'def'
+    >>> verschlüssele("Hello There!", 7)
+    'Nkrru&Znkxk''
+    """
+    ...
+
+
+def entschlüssele(text: str, key: int) -> str:
+    """
+    Verschiebt jeden Buchstaben des Textes um "key" im Alphabet.
+
+    >>> verschlüssele("def", 3)
+    'abc'
+    >>> entschlüssele("Nkrru&Znkxk'", 7)
+    'Hello There!'
+    """
+    ...
+
+
 if __name__ == "__main__":
     check_first_letter_ignore_case("Lenia", "löwe")
+    print(entschlüssele(verschlüssele("Hello There!", 6), 6))
