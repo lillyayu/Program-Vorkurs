@@ -42,7 +42,10 @@ def sum_of_squares(x: int, y: int) -> int:
     110
 
     """
-    ...
+    summe: int = 0
+    for zahl in range(x, y+1):
+        summe += zahl**2
+    return summe
 
 
 def countdown(x: int) -> None:
@@ -55,7 +58,10 @@ def countdown(x: int) -> None:
     1
     Los gehts!
     """
-    ...
+    for zahl in range(x, 0, -1):
+        print(zahl)
+        time.sleep(1)
+    print("Los gehts!")
 
 
 def division(a: int, b: int) -> int:
@@ -64,7 +70,11 @@ def division(a: int, b: int) -> int:
 
     >>> division(4, 2)
     """
-    ...
+    c: int = a * b
+    while c % 7 != 0 and not b == 0:
+        a += 2
+        b -= 1
+    return c
 
 
 def is_prime(zahl: int) -> bool:
@@ -76,7 +86,10 @@ def is_prime(zahl: int) -> bool:
     >>> is_prime(4)
     False
     """
-    ...
+    for divisor in range(2, zahl):  # Zahl und 1 autom. excludiert :)
+        if zahl % divisor == 0:  # Falls ohne Rest teilbar, keine Primzahl
+            return False
+    return True
 
 
 if __name__ == "__main__":

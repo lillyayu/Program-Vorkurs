@@ -1,4 +1,6 @@
 """
+Achtung, wenn ihr doctests benutzt funktionieren diese hier wegen input nicht
+
 a) Schreibe ein Funktion, die aus einer vom Benutzer eingegebenen Zeichenkette
 eine Liste erstellt, in der jedes Zeichen der Zeichenkette einen Listeneintrag
 darstellt.
@@ -16,11 +18,13 @@ kleiner 27 sind) und den entsprechenden Listenabschnitte aus der Liste
 "alphabet" zurückgibt (die den vom Benutzer gegebenen Zahlen entprechenden
 Buchstaben inklusive).
 
-Hinweis:
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
-                'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x',
-                'y', 'z']
+e) Umdrehen: Wir haben unser alphabet gegeben, wollen aber ein genau
+umgedrehtes Alphabet als Liste (umgedreht = [z, y, x, usw...]). Da wir dieses
+natürlich nicht per Hand aufschreiben wollen, schreibe die Funktion "umdrehen",
+die eine Liste bekommt und die umgedrehte Version dieser Liste zurückgibt.
 
+Hinweis: Benutzt hierfür bitte nicht die eingebaute .reverse()-Funktion von
+Listen.
 
 
 Schwierigkeiten:
@@ -28,10 +32,17 @@ a) 1/5
 b) 2/5
 c) 3/5
 d) 3/5
+e) 3/5
+
+
+Tipp: ihr könnt die globale Variable "alphabet" in den Aufgaben benutzen :)
 """
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+            'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x',
+            'y', 'z']
 
 
-def string_to_list():
+def string_to_list() -> list[str]:
     """
     Forde eine Zeichenkette vom Benutzer und formatiere diese als Liste.
     >>> string_to_list()
@@ -42,7 +53,7 @@ def string_to_list():
     return list(text)
 
 
-def buchstabe_zur_zahl():
+def buchstabe_zur_zahl() -> str:
     """
     Fordere eine Zahl vom Nutzer und gebe die entsprechende Zahl aus dem
     Alphabet aus.
@@ -50,49 +61,55 @@ def buchstabe_zur_zahl():
     Gib eine Zahl ein: 5
     'e'
     """
-    alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
-                'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x',
-                'y', 'z']
-    zahl = input("Geben Sie eine Zahl ein: ")
+    zahl = input("Gib eine Zahl ein: ")
     return alphabet[int(zahl) - 1]
 
 
-def liste_als_speicher():
+def liste_als_speicher() -> list[str]:
     """
     Forde drei Zahlen vom Benutzer, speicher die entsprechenden Buchstaben in
     einer Liste und gebe diese zurück.
     >>> liste_als_speicher()
-    Gib drei Zahlen ein:
-    3
-    2
-    13
+    Gib eine Zahl ein: 3
+    Gib eine Zahl ein: 2
+    Gib eine Zahl ein: 13
     ['c', 'b', 'm']
     """
-    alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
-                'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x',
-                'y', 'z']
-    returnlist = []
+    returnlist: list[str] = []
     for _ in range(3):
-        zahl = input("Geben Sie eine Zahl ein: ")
+        zahl = input("Gib eine Zahl ein: ")
         returnlist += [alphabet[int(zahl) - 1]]
     return returnlist
 
 
-def alphabetabschnitt():
+def alphabetabschnitt() -> list[str]:
     """
     Fordere zwei Zahlen vom Benutzer, und gebe den entsprechenden Abschnitt
     aus der Liste "alphabet" zurück.
     >>> alphabetabschnitt()
-    3
-    11
+    Gib eine Zahl ein: 3
+    Gib eine Zahl ein: 11
     ['c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k']
     """
-    alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
-                'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x',
-                'y', 'z']
-    zahl1 = int(input("Geben Sie eine Zahl ein: "))
-    zahl2 = int(input("Geben Sie eine Zahl ein: "))
+    zahl1 = int(input("Gib eine Zahl ein: "))
+    zahl2 = int(input("Gib eine Zahl ein: "))
     return alphabet[zahl1 - 1: zahl2]
+
+
+def umdrehen(liste: list) -> list:
+    """
+    Dreht eine gegebene Liste um.
+
+    >>> umdrehen([1, 2, 3])
+    [3, 2, 1]
+    """
+    # Wäre auch sehr schön mit einer for-schleife lösbar
+    neue_liste: list = []
+    index = len(liste) - 1
+    while index >= 0:
+        neue_liste.append(liste[index])
+        index -= 1
+    return neue_liste
 
 
 if __name__ == "__main__":
