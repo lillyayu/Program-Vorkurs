@@ -1,5 +1,4 @@
 from dataclasses import dataclass
-import doctest
 """
 Datenklassen sind eine besondere Form der Klassen, die wir schon kennengelernt
 haben. Sie übernehmen viele Aufgaben von Klassen, welche man normalerweise
@@ -24,8 +23,8 @@ c) Definiere in der Klasse Auto die Funktion fahrerin_grüßt(), welche die
 und dazu noch das Auto vorstellt.
 In unserem Beispiel soll die Ausgabe so aussehen:
 ---------
-Hallo, ich bin Lisa!!
-Das hier ist mein Opel Astra aus dem Jahr 2007
+Hallo, ich bin Ianni!!
+Das hier ist mein Opel Astra von 2007
 ---------
 
 
@@ -49,17 +48,39 @@ class FahrerIn:
         """
         Die FahrerIn stellt sich vor.
 
-        >>> lisa = FahrerIn("Lisa", "Krause", 27, 177, True)
-        >>> lisa.grüßt()
-        Hallo! Ich bin Lisa!!
+        >>> ianni = FahrerIn("Ianni", "Nezis", 27, 185, True)
+        >>> ianni.grüßt()
+        Hallo! Ich bin Ianni!!
         """
-        ...
+        print("Hallo! Ich bin " + self.vorname + "!!")
+
+
+@dataclass
+class Auto:
+    marke: str
+    modell: str
+    baujahr: int
+    fahrerin: FahrerIn
+
+    def fahrerin_grüßt(self):
+        """
+        Die FahrerIn stellt sich und ihr Auto vor.
+
+        >>> a = Auto("Open", "Astra", 2007, FahrerIn("Ianni", "Nezis", 25, \
+        185, True))
+        >>> a.fahrerin_grüßt()
+        Hallo! Ich bin Ianni!!
+        Das hier ist mein Open Astra von 2007
+        """
+
+        self.fahrerin.grüßt()
+        print("Das hier ist mein", self.marke,
+              self.modell, "von", self.baujahr)
 
 
 if __name__ == "__main__":
-    doctest.testmod()
-    lisa: FahrerIn = FahrerIn("Lisa", "Krause", 27, 177, True)
-    lisa.grüßt()
+    ianni: FahrerIn = FahrerIn("Ianni", "Nezis", 27, 185, True)
+    ianni.grüßt()
 
-    opel_astra: Auto = Auto("Open", "Astra", 2007, lisa)
+    opel_astra: Auto = Auto("Open", "Astra", 2007, ianni)
     opel_astra.fahrerin_grüßt()

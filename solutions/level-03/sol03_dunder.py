@@ -62,7 +62,7 @@ class Konto:
         >>> k1>k2
         False
         """
-        return self.kontostand < other.kontostand
+        ...
 
     def __le__(self, other: "Konto") -> bool:
         """
@@ -71,7 +71,7 @@ class Konto:
         >>> k1<=k2
         True
         """
-        return self.kontostand <= other.kontostand
+        ...
 
     def __add__(self, other: "Konto") -> "Konto":
         """
@@ -83,7 +83,7 @@ class Konto:
         >>> k3.kontostand
         150.0
         """
-        return Konto(self.besitzerin, 9999, self.kontostand + other.kontostand)
+        ...
 
 
 if __name__ == "__main__":
