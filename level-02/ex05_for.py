@@ -76,7 +76,7 @@ def bestnote(noten: list[float]) -> float | None:
     ...
 
 
-def teilbarkeit(zahlen: list[int], teiler: int):
+def teilbarkeit(zahlen: list[int], teiler: int) -> list[int]:
     """
     Gib alle Zahlen aus der Liste im Listenformat zurück, die durch den
     angegebenen Teiler teilbar sind.
