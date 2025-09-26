@@ -15,7 +15,7 @@ Die Aufgaben sind in **4 Ordner** eingeteilt:
 
 ## Aufgaben herunterladen ♻️
 
-Wenn ihr keine Lust auf Schnickschnack habt, könnt ihr den Ordner mit allen Aufgaben einfach oben rechts bei "Code" als Zip-Datei herunterladen.
+Wenn ihr keine Lust auf Schnickschnack habt, könnt ihr den Ordner mit allen Aufgaben hier herunterladen: https://github.com/lillyayu/Program-Vorkurs/archive/refs/heads/main.zip
 
 Falls ihr Lust habt, könnt ihr aber auch versuchen, den Ordner über Git herunterzuladen, bzw. zu "klonen".
 
