@@ -6,16 +6,16 @@ hier findet ihr die Aufgaben zum Programmier-Vorkurs.
 Die Aufgaben sind in **4 Ordner** eingeteilt:  
 
 - **Level 1** – Grundlagenaufgaben, Logik  
-- **Level 2** – Bedingungen, Schleifen und etwas kniffligere Aufgaben.  
+- **Level 2** – Bedingungen, Schleifen und etwas kniffligere Aufgaben
 - **Level 3** – Arbeiten mit Klassen und komplexeren Aufgaben
 
-☁️ Auch die Aufgaben in Level 1 sind teilweise nicht einfach. Wir haben versucht, Bewertungen für die Aufgaben zu finden, diese sind allerdings sehr subjektiv und für uns schwer einschätzbar. Wir freuen uns deshalb über feedback, welche Aufgaben ihr viel zu schwer, oder zu leicht bewertet fandet. 
+☁️ Auch die Aufgaben in Level 1 sind teilweise nicht einfach. Wir haben versucht, Bewertungen für die Aufgaben zu finden, diese sind allerdings sehr subjektiv und für uns schwer einschätzbar. Wir freuen uns deshalb über Feedback, welche Aufgaben ihr viel zu schwer oder zu leicht bewertet fandet. 
 
 👉 Tipp: Fangt mit **Level 1** an und steigert euch. Ihr müsst nicht alle Aufgaben schaffen, der Kurs soll vor allem ein Gefühl für das Programmieren geben. Wenn Fragen aufkommen, oder ihr Fehler in der Aufgabe findet, sagt einfach eurer Tutor*in Bescheid 🫶
 
 ## Aufgaben herunterladen ♻️
 
-Wenn ihr keine Lust auf Schnickschnack habt, könnt ihr den Ordner mit allen Aufgaben einfach oben rechts bei "Code" als Zip-Datei herunterladen.
+Wenn ihr keine Lust auf Schnickschnack habt, könnt ihr den Ordner mit allen Aufgaben hier herunterladen: https://github.com/lillyayu/Program-Vorkurs/archive/refs/heads/main.zip
 
 Falls ihr Lust habt, könnt ihr aber auch versuchen, den Ordner über Git herunterzuladen, bzw. zu "klonen".
 
