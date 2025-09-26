@@ -10,15 +10,15 @@ b) Was ist der Rest bei 9382 durch 23?
 
 c) Berechne den Durchschnitt von 12, 7 und 23.
 
-Wie sieht die Aufgabe generell aus? Schreibe die Funktion durchschnitt,
-welche den Durchschnitt von 3 beliebigen Ganzzahlen zurückgibt.
+Wie sieht die Aufgabe generell aus? Schreibe die Funktion "durchschnitt",
+welche den Durchschnitt von 3 beliebigen Ganzzahlen als Kommazahl zurückgibt.
 
 d) Abgerundeter Durchschnitt: Nun wollen wir eine Ganzzahl, keine Kommazahl,
 als Durchschnitt. Schreibe abgerundeter Durchschnitt, welche den Durch-
-schnitt von 3 Zahlen abgerundet zurückgibt
+schnitt von 3 Zahlen abgerundet zurückgibt.
 
 e) Satz den Pythagoras:
-a^2 + b^2 = c^2 (Tipp: ^ ist nicht Potenz in Python)
+a quadrat + b quadrat = c quadrat
 a und b sind als Argumente gegeben. Schreibe die Funktion "pythagoras",
 die mit "return" "c" (nicht c^2) zurückgibt.
 

@@ -24,7 +24,7 @@ Das hat den Vorteil, dass ihr dann Änderungen / Korrekturen in den Aufgaben vie
 <summary>
 💡 Hier ausklappen, wenn ihr es mit git versuchen wollt :)
 </summary>
-<h3> 📥 Anleitung: den Ordner (**das Git-Repository**) klonen: </h3>
+<h3> 📥 Anleitung: den Ordner (<strong>das Git-Repository</strong>) klonen: </h3>
 Damit ihr die Aufgaben bearbeiten könnt, müsst ihr das Repository auf euren eigenen Rechner holen.
 Das nennt man klonen.
 
@@ -101,4 +101,4 @@ def hallo() -> None:
 Die Lösungen werden wir im Anschluss an die Aufgaben auch in dieses Repository stellen. Beachtet bitte, dass es Musterlösungen sind. Man kann auf viele verschiedene Arten programmieren und oft sind Lösungen gleich gut! 🌱
 
 Und jetzt viel Spaß mit den Aufgaben, \
-Eure Fachschaft ☀️
+Eure Fachschaft TF ☀️
