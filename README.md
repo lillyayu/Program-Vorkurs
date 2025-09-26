@@ -6,7 +6,7 @@ hier findet ihr die Aufgaben zum Programmier-Vorkurs.
 Die Aufgaben sind in **4 Ordner** eingeteilt:  
 
 - **Level 1** – Grundlagenaufgaben, Logik  
-- **Level 2** – Bedingungen, Schleifen und etwas kniffligere Aufgaben.  
+- **Level 2** – Bedingungen, Schleifen und etwas kniffligere Aufgaben
 - **Level 3** – Arbeiten mit Klassen und komplexeren Aufgaben
 
 ☁️ Auch die Aufgaben in Level 1 sind teilweise nicht einfach. Wir haben versucht, Bewertungen für die Aufgaben zu finden, diese sind allerdings sehr subjektiv und für uns schwer einschätzbar. Wir freuen uns deshalb über feedback, welche Aufgaben ihr viel zu schwer, oder zu leicht bewertet fandet. 
