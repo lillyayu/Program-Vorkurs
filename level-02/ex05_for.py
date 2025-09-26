@@ -20,7 +20,12 @@ Schreibe die Funktion "bestnote", welche die Liste durchgeht und die Bestnote
 ausgibt.
 Wenn die Liste leer ist, gib None zurück.
 
-c) Es gibt Professor:innen, welche zwar in ihrem Fach brilliant sind, deren
+c) Schreibe die Funktion "teilbarkeit", welche eine Liste mit ganzen Zahlen,
+sowie eine weitere ganze Zahl nimmt, welche als Teiler dient. Gib alle Zahlen
+aus der Liste im Listenformat zurück, die durch den angegebenen Teiler teilbar
+sind.
+
+d) Es gibt Professor:innen, welche zwar in ihrem Fach brilliant sind, deren
 Vorlesungsfolien allerdings wirklich mittelmäßig sind. Des öfteren sieht man
 dort Wortneuschöpfungen mit zusammengesetzten Nomen, welche immer länger und
 länger Werden. Wir haben also eine Liste an Worten (strings), und wollen uns
@@ -29,7 +34,7 @@ es so gibt.
 Schreibe die Funktion "längstes_wort" welche das längste Wort aus einer Liste
 an Strings zurückgibt.
 
-d) (Schwierig) Vielleicht habt ihr ja schon die Aufgabe "türsteher" aus dem
+e) (Schwierig) Vielleicht habt ihr ja schon die Aufgabe "türsteher" aus dem
 Ordner "If-Verzweigungen" gemacht. Wenn nicht, dürft ihr hier noch einmal
 Türsteher:in spielen.
 Ihr kriegt eine Liste von Gästen im Format tuple[str, int]: ("name", alter) und
@@ -40,7 +45,8 @@ Schwierigkeit
 a) 2/5
 b) 3/5
 c) 3/5
-d) 4/5 🌶️
+d) 3/5
+e) 4/5 🌶️
 
 """
 
@@ -66,6 +72,16 @@ def bestnote(noten: list[float]) -> float | None:
     >>> bestnote([5.0])
     5.0
     >>> bestnote([])
+    """
+    ...
+
+
+def teilbarkeit(zahlen: list[int], teiler: int):
+    """
+    Gib alle Zahlen aus der Liste im Listenformat zurück, die durch den
+    angegebenen Teiler teilbar sind.
+    >>> teilbarkeit([107, 108, 444, 378, 0], 27)
+    [108, 378, 0]
     """
     ...
 
@@ -101,4 +117,3 @@ def überprüfe_gäste(gästeliste: list[tuple[str, int]]) -> list[str]:
 
 if __name__ == "__main__":
     doctest.testmod()
-    ...
