@@ -22,6 +22,8 @@ a quadrat + b quadrat = c quadrat
 a und b sind als Argumente gegeben. Schreibe die Funktion "pythagoras",
 die mit "return" "c" (nicht c^2) zurückgibt.
 
+Tipp: Die Wurzel ist das selbe wie hoch 0.5
+
 Schwierigkeit
 a) 1/5
 b) 1/5
